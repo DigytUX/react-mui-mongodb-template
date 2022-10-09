@@ -1,7 +1,7 @@
 import {addNewEmployee} from '../controllers/controllers'
 
 const routes = (app) => {
-    app.route('/players')
+    app.route('/employees')
         .post(addNewEmployee)
 }
 
