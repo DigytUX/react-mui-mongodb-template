@@ -3,7 +3,8 @@ import {
   Box, 
   Paper, 
   Typography,
-  Grid
+  Grid,
+  Button
 } from '@mui/material';
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
             >
           I also added extra comments and 
           </Typography>
+          <Button variant="contained" href="/add-guest">View the demo</Button>
         </Box>
         <Grid container spacing={5}>
           <Grid item xs={12} sm={6}>

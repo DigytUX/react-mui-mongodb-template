@@ -6,6 +6,7 @@ import {
     Typography,
     Grid
 } from '@mui/material'
+import axios from 'axios'
 
 export const Form = () =>   {
     const [firstname, setFirstname] = useState()
@@ -46,14 +47,18 @@ export const Form = () =>   {
 
     const handleSubmit = () => {
         const query = {
-            firstname:firstname,
-            lastname:lastname,
+            firstName:firstname,
+            lastName:lastname,
             email:email,
-            phone:phone,
+            phone:phone.toString(),
             address:address
         }
-    
-        console.log(query) // submit this!
+        try {
+            axios
+            .post('http://localhost:8080/guests', query)
+        } catch {
+            console.log('we gots a prahlem')
+        }
     }
 
     return (
@@ -87,6 +92,7 @@ export const Form = () =>   {
                     <TextField
                         sx={styles.Field}
                         label="Phone"
+                        type="number"
                         onChange={e => handlePhone(e)}
                     />
                 </Grid>
