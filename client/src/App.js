@@ -118,13 +118,6 @@ function App() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper>
-              <Box sx={styles.FlexBox}>
-               <Form />
-              </Box>
-            </Paper>
-          </Grid>
         </Grid>
       </Box>
     </Container>
