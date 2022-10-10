@@ -5,6 +5,7 @@ import {
   Typography,
   Grid
 } from '@mui/material';
+import {Form} from './components/Form'
 
 function App() {
   const styles = {
@@ -114,6 +115,13 @@ function App() {
                   This backend is built using express, a Node.js framework that will get your CRUD app 
                   up as quickly as possible with clean code that is easy to digest scale on without crap that is not needed.
                 </Typography>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper>
+              <Box sx={styles.FlexBox}>
+               <Form />
               </Box>
             </Paper>
           </Grid>
