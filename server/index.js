@@ -18,18 +18,13 @@ mongoose
         useUnifiedTopology:true
     })
     .then(()=> console.log('connected to mongodb'))
-    .catch(error => handleError(error));
+    .catch(error => handleError(error))
 
 app.use(bodyparser.urlencoded({extended:true}))
-//app.use(bodyparser.json())
 app.use(express.json())
 app.use(cors())
 
 routes(app)
-
-app.get('/', (req, res) => 
-    res.send(`Naked React - MERN:${PORT}`)
-)
 
 app.listen(PORT,() => 
     console.log('SERVER STARTED')

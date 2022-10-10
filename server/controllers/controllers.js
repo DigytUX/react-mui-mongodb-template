@@ -6,6 +6,10 @@ import {GuestSchema} from '../models/model'
 // Example: Guest -> guests (collection in Atlas)
 const Guest = mongoose.model('Guest', GuestSchema)
 
+export const homeRoute = (req, res) => {
+    res.send('Home')
+}
+
 export const addNewGuest = (req, res) => {
     let newGuest = new Guest(req.body)
     newGuest.save((err) => {
