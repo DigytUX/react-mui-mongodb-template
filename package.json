@@ -1,0 +1,26 @@
+{
+  "name": "naked-react-mern-mui",
+  "version": "1.0.0",
+  "description": "Build react without the crap!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"npm start --prefix server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigytUX/naked-react-mern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DigytUX/naked-react-mern/issues"
+  },
+  "homepage": "https://github.com/DigytUX/naked-react-mern#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
