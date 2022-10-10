@@ -1,3 +1,5 @@
+//This file is a simple example showing how to 
+//interact with the crud endpoints in the app
 import React, {useEffect,useState} from 'react'
 import {
     Box,
@@ -36,6 +38,8 @@ export const AddGuest = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
+        //the port number is what you set in the 
+        //.env in your /server folder
         axios.get('http://localhost:8080/guests')
         .then(res => setData(res['data']))
     },[])
@@ -43,7 +47,7 @@ export const AddGuest = () => {
     return (
         <Box>
             <Box pt={3} pl={5}>
-                <Button variant="contained" href="/">Home</Button>
+                <Button variant='contained' href='/'>Home</Button>
             </Box>
             <Box p={5}>
                 <Form />

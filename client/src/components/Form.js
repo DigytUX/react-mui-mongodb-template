@@ -55,9 +55,9 @@ export const Form = () =>   {
         }
         try {
             axios
-            .post('http://localhost:8080/guests', query)
-        } catch {
-            console.log('we gots a prahlem')
+                .post('http://localhost:8080/guests', query)
+        } catch(err) {
+            console.log('we gots a prahlem:', err)
         }
     }
 
