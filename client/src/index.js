@@ -11,6 +11,8 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
+// Name the route and add 
+// your component, that easy
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
     path: '/add-guest',
     element: <AddGuest />,
   },
+  /* {
+  //   path: '/your-route',
+  //   element: <YourComponent />,
+  },*/
 ])
 
 root.render(
