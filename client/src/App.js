@@ -3,7 +3,8 @@ import {
   Box, 
   Paper, 
   Typography,
-  Grid
+  Grid,
+  Button
 } from '@mui/material';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       display:'flex',
       flexDirection:'column',
       gap:'10px',
-      padding:5
+      padding:5,
+      alignItems:'start'
     }
   }
   return (
@@ -80,6 +82,7 @@ function App() {
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Distractling-Free foundation to start building</Typography>
                 <Typography variant="body1">Powered by MUI, you can immedialty start building a usuable React UI</Typography>
+                <Button variant="contained">Learn more</Button>
               </Box>
             </Paper>
           </Grid>
@@ -88,6 +91,7 @@ function App() {
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Understand what your building</Typography>
                 <Typography variant="body1">No more code without explaination of why it's written the way it is. Learn while you code</Typography>
+                <Button variant="contained">Learn more</Button>
               </Box>
             </Paper>
           </Grid>
@@ -96,6 +100,7 @@ function App() {
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Easy Database integration with MongoDB</Typography>
                 <Typography variant="body1">All the code is there and explained to you. Simply build your project and add your connection string and you're connected!</Typography>
+                <Button variant="contained">Learn more</Button>
               </Box>
             </Paper>
           </Grid>
@@ -113,6 +118,7 @@ function App() {
                   This backend is built using express, a Node.js framework that will get your CRUD app 
                   up as quickly as possible with clean code that is easy to digest scale on without crap that is not needed.
                 </Typography>
+                <Button variant="contained">Learn more</Button>
               </Box>
             </Paper>
           </Grid>
