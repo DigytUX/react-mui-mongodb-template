@@ -2,7 +2,8 @@ import {
   Container,
   Box, 
   Paper, 
-  Typography
+  Typography,
+  Grid
 } from '@mui/material';
 
 function App() {
@@ -66,7 +67,56 @@ function App() {
             I just wanted the code and not the extra crap. Another issue with online resources is that not everyone will code the same and sometimes they leave out
             very important details that prevents you from completing my damn project 
           </Typography>
+          <Typography 
+              variant="h6"
+              component="p"
+            >
+          I also added extra comments and 
+          </Typography>
         </Box>
+        <Grid container spacing={5}>
+          <Grid item xs={6}>
+            <Paper>
+              <Box sx={styles.FlexBox}>
+                <Typography variant="h5">Distractling-Free foundation to start building</Typography>
+                <Typography variant="body1">Powered by MUI, you can immedialty start building a usuable React UI</Typography>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper>
+              <Box sx={styles.FlexBox}>
+                <Typography variant="h5">Understand what your building</Typography>
+                <Typography variant="body1">No more code without explaination of why it's written the way it is. Learn while you code</Typography>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper>
+              <Box sx={styles.FlexBox}>
+                <Typography variant="h5">Easy Database integration with MongoDB</Typography>
+                <Typography variant="body1">All the code is there and explained to you. Simply build your project and add your connection string and you're connected!</Typography>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper>
+              <Box sx={styles.FlexBox}>
+                <Typography variant="h5">No bloat backend</Typography>
+                {/* <Typography variant="body1">
+                  The problem with services like Amplify and Firebase 
+                  is that you dont have much control on the backend. 
+                  Without decent documentation and root access you can run into issues
+                  that are quite time expensive.
+                </Typography> */}
+                <Typography variant="body1">
+                  This backend is built using express, a Node.js framework that will get your CRUD app 
+                  up as quickly as possible with clean code that is easy to digest scale on without crap that is not needed.
+                </Typography>
+              </Box>
+            </Paper>
+          </Grid>
+        </Grid>
       </Box>
     </Container>
   );
