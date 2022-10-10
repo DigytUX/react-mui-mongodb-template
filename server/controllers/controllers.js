@@ -1,14 +1,15 @@
 import mongoose from 'mongoose'
-import {EmployeeSchema} from '../models/model' 
+import {GuestSchema} from '../models/model' 
 
-const Employee = mongoose.model('Employee', EmployeeSchema)
+//Creating a vairable from the mongoose schema, will 
+//automatically create a new collection under the name
+// Example: Guest -> guests (collection in Atlas)
+const Guest = mongoose.model('Guest', GuestSchema)
 
-export const addNewEmployee = (req, res) => {
-    let newEmployee = new Employee(req.body)
-
-    newEmployee.save((err) => {
+export const addNewGuest = (req, res) => {
+    let newGuest = new Guest(req.body)
+    newGuest.save((err) => {
         if(err) res.send(err)
-        
-        res.json(Employee)
+        res.json(Guest)
     })
 }

@@ -1,8 +1,8 @@
-import {addNewEmployee} from '../controllers/controllers'
+import {addNewGuest} from '../controllers/controllers'
 
 const routes = (app) => {
-    app.route('/employees')
-        .post(addNewEmployee)
+    app.route('/guests')
+        .post(addNewGuest)
 }
 
 export default routes

@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
-export const EmployeeSchema = new Schema({
+export const GuestSchema = new Schema({
     created_date:{
         type:Date,
         default:Date.now
@@ -23,7 +23,7 @@ export const EmployeeSchema = new Schema({
         type:Number,
         required:true
     },
-    title:{
+    address:{
         type:String,
         required:true
     }
