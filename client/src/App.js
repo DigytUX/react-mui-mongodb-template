@@ -77,7 +77,7 @@ function App() {
           </Typography>
         </Box>
         <Grid container spacing={5}>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper>
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Distractling-Free foundation to start building</Typography>
@@ -85,7 +85,7 @@ function App() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper>
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Understand what your building</Typography>
@@ -93,7 +93,7 @@ function App() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper>
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">Easy Database integration with MongoDB</Typography>
@@ -101,7 +101,7 @@ function App() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper>
               <Box sx={styles.FlexBox}>
                 <Typography variant="h5">No bloat backend</Typography>
@@ -118,7 +118,7 @@ function App() {
               </Box>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Paper>
               <Box sx={styles.FlexBox}>
                <Form />
