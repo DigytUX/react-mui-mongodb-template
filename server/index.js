@@ -2,6 +2,7 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 import express from 'express'
 import mongoose from 'mongoose'
+import cors from 'cors'
 import bodyparser from 'body-parser'
 import routes from './routes/routes'
 
@@ -22,6 +23,7 @@ mongoose
 app.use(bodyparser.urlencoded({extended:true}))
 //app.use(bodyparser.json())
 app.use(express.json())
+app.use(cors())
 
 routes(app)
 

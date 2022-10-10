@@ -1,7 +1,8 @@
-import {addNewGuest} from '../controllers/controllers'
+import {addNewGuest, getGuests} from '../controllers/controllers'
 
 const routes = (app) => {
     app.route('/guests')
+        .get(getGuests)
         .post(addNewGuest)
 }
 

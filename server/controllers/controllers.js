@@ -13,3 +13,10 @@ export const addNewGuest = (req, res) => {
         res.json(Guest)
     })
 }
+
+export const getGuests = (req, res) => {
+   Guest.find({}, (err, Guest) =>{
+        if(err) res.send(err)
+        res.json(Guest)
+    })
+}
