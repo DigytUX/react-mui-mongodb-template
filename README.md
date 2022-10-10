@@ -16,7 +16,7 @@ Go back to your database and then click the <code>Connect</code> button and choo
 return to your project
 
 ### Updating the environemal variable(s)
-Inside of the <code>/server</code> folder, create a file called .env and add the following contents
+Inside of the <code>/server</code> folder, create a <code>.env</code> and add the following contents
 
 <code>
 MONGO_URI="mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority"
