@@ -19,5 +19,5 @@ return to your project
 Inside of the <code>/server</code> folder, create a file called .env and add the following contents
 
 <code>
-mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority
+MONGO_URI="mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority"
 <code>
