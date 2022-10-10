@@ -5,7 +5,6 @@ import {
   Typography,
   Grid
 } from '@mui/material';
-import {Form} from './components/Form'
 
 function App() {
   const styles = {
