@@ -25,15 +25,7 @@ export const getGuests = (req, res) => {
     })
 }
 
-//?
 export const getGuestById = (req, res) => {
-    // if(!mongoose.Types.ObjectId.isValid( req.params) ) return false;
-    console.log('ID', req.params.id)
-    // let myObjectId = ObjectId(req.params)
-    // let myObjectIdString = myObjectId.String()
-
-
-    // looks like the id needs to be converted, returning null
     Guest.findById(req.params.id, (err, Guest) =>{
         if(err) res.send(err)
         res.json(Guest)
