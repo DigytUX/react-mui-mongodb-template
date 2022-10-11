@@ -3,36 +3,13 @@
 import React, {useEffect,useState} from 'react'
 import {
     Box,
-    Card,
     Grid,
-    Typography,
     Button
 } from '@mui/material'
 import {Form} from '../components/Form'
+import {GuestCard} from '../components/GuestCard'
 import axios from 'axios'
 
-const GuestCard = ({data}) => {
-    return (
-        <>
-           <Card>
-                <Box p={5}>
-                    <Typography variant='h4'>
-                        {data.firstName}
-                    </Typography>
-                    <Typography variant='h6'>
-                        {data.lastName}
-                    </Typography>
-                    <Typography variant='body1'>
-                        {data.phone}
-                    </Typography>
-                    <Typography variant='body1'>
-                        {data.address}
-                    </Typography>
-                </Box>
-           </Card>
-        </>
-    )
-}
 
 export const AddGuest = () => {
     const [data, setData] = useState([])

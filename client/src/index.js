@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import {AddGuest} from './pages/AddGuest'
+import {GuestProfile} from './pages/GuestProfile'
 import reportWebVitals from './reportWebVitals'
 import {
   createBrowserRouter,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/add-guest',
     element: <AddGuest />,
+  },
+  {
+    path: '/guest',
+    element: <GuestProfile />,
   },
   /* {
   //   path: '/your-route',
