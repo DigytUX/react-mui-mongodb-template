@@ -40,7 +40,7 @@ export const AddGuest = () => {
     useEffect(() => {
         //the port number is what you set in the 
         //.env in your /server folder
-        axios.get('http://localhost:8080/guests')
+        axios.get(`http://localhost:8080/guests`)
         .then(res => setData(res['data']))
     },[])
 
