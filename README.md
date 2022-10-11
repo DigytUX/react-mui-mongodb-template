@@ -15,7 +15,7 @@ Click "Add New Database User" , and select the password authentication method, c
 Go back to your database and then click the <code>Connect</code> button and choose connect to your application. Copy the URI and
 return to your project
 
-### Updating the environemal variable(s)
+### Updating the environment variable(s)
 Inside of the root folder, create a <code>.env</code> and add the following contents
 
 <code>
