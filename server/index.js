@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv'
-dotenv.config()
+dotenv.config({path:'../.env'})
 import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
