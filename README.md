@@ -20,10 +20,10 @@ Inside of the root folder, create a <code>.env</code> and add the following cont
 
 <code>
   MONGO_URI="mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority"
-<code>
+</code>
 <code>
   POST=8080
-<code>
+</code>
 
 
 This will automatically connect you to your database. The code is already set and contains explainations of what is going on.
