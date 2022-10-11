@@ -16,10 +16,11 @@ Go back to your database and then click the <code>Connect</code> button and choo
 return to your project
 
 ### Updating the environemal variable(s)
-Inside of the <code>/server</code> folder, create a <code>.env</code> and add the following contents
+Inside of the root folder, create a <code>.env</code> and add the following contents
 
 <code>
 MONGO_URI="mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority"
+PORT=8080
 <code>
 
 This will automatically connect you to your database. The code is already set and contains explainations of what is going on.
