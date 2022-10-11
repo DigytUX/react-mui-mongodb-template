@@ -7,7 +7,7 @@ import bodyparser from 'body-parser'
 import routes from './routes/routes'
 
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 const uri = process.env.MONGO_URI
 
 mongoose
