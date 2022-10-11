@@ -8,16 +8,15 @@ import {
 import axios from 'axios'
 
 export const GuestCard = ({data}) => {
-    const [id, setId] = useState(data)
 
-    const handleClick = async () => {
-        try {
-            const result = await axios.get(`http://localhost:8080/guest/:id`)
-            console.log('result:', result)
+    const handleClick = () => {
+        // try {
+        //     const result = await axios.get(`http://localhost:8080/guest/:id`, data._id)
+        //     console.log('result:', result)
             
-        } catch(err) {
-            console.log('we gots a prahlem:', err)
-        }
+        // } catch(err) {
+        //     console.log('we gots a prahlem:', err)
+        // }
     }
     
     return (

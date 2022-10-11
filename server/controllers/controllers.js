@@ -25,8 +25,9 @@ export const getGuests = (req, res) => {
     })
 }
 
+//?
 export const getGuestById = (req, res) => {
-    console.log('ID', req)
+    console.log('ID', req.params)
     // let myObjectId = ObjectId(req.params)
     // let myObjectIdString = myObjectId.String()
 
