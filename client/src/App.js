@@ -73,7 +73,7 @@ function App() {
               variant='h6'
               component='p'
             >
-          I also added extra comments and 
+          I also added extra comments
           </Typography>
           <Button variant='contained' href='/add-guest'>View the demo</Button>
         </Box>
