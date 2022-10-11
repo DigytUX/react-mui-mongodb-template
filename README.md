@@ -1,4 +1,4 @@
-# React Mern MUI
+# React + MUI + MONGODB
 Build react without the crap!
 
 ## Prerequisites
