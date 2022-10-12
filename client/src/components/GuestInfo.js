@@ -17,22 +17,23 @@ export const GuestInfo = ({
 }) => {
     return (
         <Box>
-            <Typography>
+            <Typography variant="h4">
                 {firstname}
             </Typography>
-            <Typography>
+            <Typography variant="h5">
                 {lastname}
             </Typography>
-            <Typography>
+            <Typography variant="h6">
                 {email}
             </Typography>
-            <Typography>
+            <Typography variant="h6">
                 {phone}
             </Typography>
-            <Typography>
+            <Typography variant="h6">
                 {address}
             </Typography>
             <Button variant="contained">Delete</Button>
+            <Button href="/add-guest" variant="contained">Back</Button>
         </Box>
     )
 }

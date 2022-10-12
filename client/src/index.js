@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <AddGuest />,
   },
   {
-    path: '/guest',
+    path: '/guest/:id',
     element: <GuestProfile />,
   },
   /* {
