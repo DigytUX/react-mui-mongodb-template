@@ -15,6 +15,14 @@ export const Form = () =>   {
     const [phone, setPhone] = useState()
     const [address, setAddress] = useState()
 
+    const query = {
+        firstName:firstname,
+        lastName:lastname,
+        email:email,
+        phone:phone.toString(),
+        address:address
+    }
+
     const styles = {
         Field: {
             width:'100%'
@@ -28,39 +36,36 @@ export const Form = () =>   {
         const newValue =  e.target.value
         setFirstname(newValue)
     }
+
     const handleLastname = (e) => {
         const newValue =  e.target.value
         setLastname(newValue)
     }
+
     const handleEmail = (e) => {
         const newValue =  e.target.value
         setEmail(newValue)
     }
+
     const handlePhone = (e) => {
         const newValue =  e.target.value
         setPhone(newValue)
     }
+
     const handleAddress = (e) => {
         const newValue =  e.target.value
         setAddress(newValue)
     }
-    
-    const handleSubmit = () => {
-        const query = {
-            firstName:firstname,
-            lastName:lastname,
-            email:email,
-            phone:phone.toString(),
-            address:address
-        }
-        try {
-            axios
-                .post('http://localhost:8080/guests', query)
-                window.location.reload(false);
-        } catch(err) {
-            console.log('we gots a prahlem:', err)
-        }
-    }
+    // Replace with update route
+    // const handleSubmit = () => {
+    //     try {
+    //         axios
+    //             .post('http://localhost:8080/guests', query)
+    //             window.location.reload(false);
+    //     } catch(err) {
+    //         console.log('we gots a prahlem:', err)
+    //     }
+    // }
 
     return (
         <Box>
