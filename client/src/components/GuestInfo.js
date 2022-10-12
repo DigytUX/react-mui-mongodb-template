@@ -15,7 +15,8 @@ export const GuestInfo = ({
         lastname, 
         email,
         phone,
-        address
+        address,
+        handleUpdate
     }) => {
     const navigate = useNavigate()
 
@@ -29,6 +30,7 @@ export const GuestInfo = ({
     // const updateGuest = () => {
         
     // }
+
     return (
         <Box>
             <Typography variant="h4">
@@ -47,6 +49,7 @@ export const GuestInfo = ({
                 {address}
             </Typography>
             <Button onClick={deleteGuest} variant="contained">Delete</Button>
+            <Button onClick={handleUpdate} variant="contained">Update</Button>
             <Button href="/add-guest" variant="contained">Back</Button>
         </Box>
     )

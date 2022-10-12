@@ -44,7 +44,7 @@ export const Form = () =>   {
         const newValue =  e.target.value
         setAddress(newValue)
     }
-
+    
     const handleSubmit = () => {
         const query = {
             firstName:firstname,
@@ -56,6 +56,7 @@ export const Form = () =>   {
         try {
             axios
                 .post('http://localhost:8080/guests', query)
+                window.location.reload(false);
         } catch(err) {
             console.log('we gots a prahlem:', err)
         }
