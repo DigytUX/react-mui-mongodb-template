@@ -31,3 +31,12 @@ export const getGuestById = (req, res) => {
         res.json(Guest)
     })
 }
+
+export const deleteGuestById = (req, res) => {
+    console.log('here is the id', req.params.id)
+    Guest.findByIdAndRemove(req.params.id, (err, Guest) => {
+        if(err) res.send(500)
+        res.send(200)
+    })
+    
+}

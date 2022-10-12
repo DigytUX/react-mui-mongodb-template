@@ -6,14 +6,29 @@ import {
     Typography,
     Grid
 } from '@mui/material'
+import axios from 'axios'
+import {useNavigate} from "react-router-dom"
 
 export const GuestInfo = ({
-    firstname, 
-    lastname, 
-    email,
-    phone,
-    address
-}) => {
+        _id,
+        firstname, 
+        lastname, 
+        email,
+        phone,
+        address
+    }) => {
+    const navigate = useNavigate()
+
+    const deleteGuest = () => {
+        axios.delete(`http://localhost:8080/guest/${_id}`)
+        .then(res =>
+            navigate('/add-guest')
+        )
+    }
+
+    // const updateGuest = () => {
+        
+    // }
     return (
         <Box>
             <Typography variant="h4">
@@ -31,7 +46,7 @@ export const GuestInfo = ({
             <Typography variant="h6">
                 {address}
             </Typography>
-            <Button variant="contained">Delete</Button>
+            <Button onClick={deleteGuest} variant="contained">Delete</Button>
             <Button href="/add-guest" variant="contained">Back</Button>
         </Box>
     )

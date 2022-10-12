@@ -17,7 +17,8 @@ export const GuestProfile = () => {
         <>
             <Box p={5}>
                 {data && (
-                    <GuestInfo 
+                    <GuestInfo
+                        _id={id}
                         firstname={data.firstName} 
                         lastname={data.lastName}
                         email={data.email}

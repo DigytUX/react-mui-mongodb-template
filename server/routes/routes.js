@@ -2,7 +2,8 @@ import {
     homeRoute, 
     addNewGuest, 
     getGuests,
-    getGuestById
+    getGuestById,
+    deleteGuestById
 } from '../controllers/controllers'
 
 const routes = (app) => {
@@ -15,6 +16,7 @@ const routes = (app) => {
         
     app.route('/guest/:id')
         .get(getGuestById)
+        .delete(deleteGuestById)
 }
 
 export default routes
