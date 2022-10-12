@@ -6,7 +6,6 @@ import {
     Typography,
     Grid
 } from '@mui/material'
-import axios from 'axios'
 
 export const GuestInfo = ({
     firstname, 

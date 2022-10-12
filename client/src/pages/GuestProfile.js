@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import {Box} from '@mui/material'
 import {GuestInfo} from '../components/GuestInfo'
-import {useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom'
 import axios from 'axios'
 
 export const GuestProfile = () => {
     const [data, setData] = useState(null)
-    const { id } = useParams();
+    const { id } = useParams()
 
     useEffect(()=> {
         axios.get(`http://localhost:8080/guest/${id}`)
