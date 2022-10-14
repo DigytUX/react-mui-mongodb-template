@@ -10,7 +10,6 @@ import {Form} from '../components/Form'
 import {GuestCard} from '../components/GuestCard'
 import axios from 'axios'
 
-
 export const AddGuest = () => {
     const [data, setData] = useState([])
 

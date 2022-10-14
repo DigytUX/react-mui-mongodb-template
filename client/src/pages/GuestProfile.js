@@ -51,16 +51,17 @@ export const GuestProfile = () => {
         }
     
         const handleSubmit = () => {
+            console.log('submitting form')
             const query = {
                 firstName:firstname,
                 lastName:lastname,
                 email:email,
-                phone:phone.toString(),
+                phone:phone,
                 address:address
             }
             try {
                 axios
-                    .post('http://localhost:8080/guests', query)
+                    .put(`http://localhost:8080/guest/${id}`, query)
             } catch(err) {
                 console.log('we gots a prahlem:', err)
             }

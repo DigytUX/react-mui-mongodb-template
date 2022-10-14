@@ -3,7 +3,8 @@ import {
     addNewGuest, 
     getGuests,
     getGuestById,
-    deleteGuestById
+    deleteGuestById,
+    updateGuestById
 } from '../controllers/controllers'
 
 const routes = (app) => {
@@ -17,6 +18,7 @@ const routes = (app) => {
     app.route('/guest/:id')
         .get(getGuestById)
         .delete(deleteGuestById)
+        .put(updateGuestById)
 }
 
 export default routes

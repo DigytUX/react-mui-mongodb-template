@@ -19,7 +19,7 @@ export const Form = () =>   {
         firstName:firstname,
         lastName:lastname,
         email:email,
-        phone:phone.toString(),
+        phone:phone,
         address:address
     }
 
@@ -57,15 +57,15 @@ export const Form = () =>   {
         setAddress(newValue)
     }
     // Replace with update route
-    // const handleSubmit = () => {
-    //     try {
-    //         axios
-    //             .post('http://localhost:8080/guests', query)
-    //             window.location.reload(false);
-    //     } catch(err) {
-    //         console.log('we gots a prahlem:', err)
-    //     }
-    // }
+    const handleSubmit = () => {
+        try {
+            axios
+                .post('http://localhost:8080/guests', query)
+                window.location.reload(false);
+        } catch(err) {
+            console.log('we gots a prahlem:', err)
+        }
+    }
 
     return (
         <Box>
