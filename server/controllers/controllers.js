@@ -34,7 +34,10 @@ export const getGuestById = (req, res) => {
 
 export const updateGuestById = (req, res) => {
     console.log('here is the id', req.body)
-    Guest.findOneAndUpdate({_id: req.params.id}, req.body, {new:true}, (err, Guest) => {
+    Guest.findOneAndUpdate({_id: req.params.id}, 
+        req.body, 
+        {new:true}, 
+        (err, Guest) => {
         if(err) res.send(500)
         res.send(200)
     })
