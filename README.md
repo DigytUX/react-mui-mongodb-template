@@ -28,17 +28,17 @@ Run the following commands inside the root of `/server`. This will make sure tha
 Afterward, create a .babelrc file and add the following code
 
 ```
-**{**
+{
 
-**   "presets":[**
+   "presets":[**
 
-**       "env",**
+       "env",**
 
-**       "stage-0" // includes all latest changes to the javascript**
+       "stage-0" // includes all latest changes to the javascript**
 
-**   ]**
+   ]
 
-**}**
+}
 ```
 
 
