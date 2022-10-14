@@ -15,15 +15,54 @@ Click "Add New Database User" , and select the password authentication method, c
 Go back to your database and then click the <code>Connect</code> button and choose connect to your application. Copy the URI and
 return to your project
 
-### Updating the environment variable(s)
-Inside of the root folder, create a <code>.env</code> and add the following contents
-
-<code>
-  MONGO_URI="mongodb+srv://username:yourpassword@mernapp.dntw1yd.mongodb.net/?retryWrites=true&w=majority"
-</code>
-<code>
-  POST=8080
-</code>
+This document will provide you with the steps to create a full-stack MERN application that is designed to be scalable and flexible for enterprise use.
 
 
-This will automatically connect you to your database. The code is already set and contains explainations of what is going on.
+## **Download Nodejs and Create React App**
+
+You can download the most stable version of Nodejs by visiting [https://nodejs.org/en/](https://nodejs.org/en/)<span style="text-decoration:underline;">.</span> Create-react-app can be downloaded from [https://create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)<span style="text-decoration:underline;">.</span>
+
+
+## **Create the directory project directory**
+
+Here is where you will be installing the client and server folder. Inside of the new directory, create a /client and /server directory respectively.
+
+Inside of /server run then execute the following
+
+npm init -y
+
+yarn add express cors body-parser mongoose
+
+
+## **Babel Setup**
+
+Run the following commands inside the root of /server. This will make sure that our code is backward compatible with older browser versions.
+
+babel-cli, babel-preset-env, babel-preset-stage-0
+
+Afterward, create a .babelrc file and add the following code
+
+**{**
+
+**   "presets":[**
+
+**       "env",**
+
+**       "stage-0" // includes all latest changes to the javascript**
+
+**   ]**
+
+**}**
+
+
+## **Environment variables**
+
+Inside the root of your project, add a file named .env and add the MONGO_URI variable and the connection string with your username and password.
+
+MONGO_URI="mongodb+srv://&lt;username>:&lt;password>@yourdatabase.mongodb.net/?retryWrites=true&w=majority"
+
+Run npm init -y from the root of your repository to create a node project
+
+npm install concurrently –save
+
+This will allow you to run both the client and server at the same time using one command
