@@ -2,21 +2,6 @@
 Build react without the crap!
 
 ## Prerequisites
-You obviously will need a stable version of node and react to get started. Visit https://nodejs.org/en/ to install node and install 
-Create React App by visiting https://create-react-app.dev/.
-
-### Creating your MongoDB Database
-Visit www.mongodb.com and create a free account. Afterwards you will need to create a database using Mongodb Atlas.
-Using the Atlas CLI optional but will make you a badass dev if you do use it. Once you're completed with that, 
-click on the <code>Database Access</code> option menu in the left column under <code>Security</code>. 
-
-Click "Add New Database User" , and select the password authentication method, create a username and password and then save.
-
-Go back to your database and then click the <code>Connect</code> button and choose connect to your application. Copy the URI and
-return to your project
-
-This document will provide you with the steps to create a full-stack MERN application that is designed to be scalable and flexible for enterprise use.
-
 
 ## **Download Nodejs and Create React App**
 
@@ -57,6 +42,17 @@ Afterward, create a .babelrc file and add the following code
 
 ## **Environment variables**
 
+### Creating your MongoDB Database
+Visit www.mongodb.com and create a free account. Afterwards you will need to create a database using Mongodb Atlas.
+Using the Atlas CLI optional but will make you a badass dev if you do use it. Once you're completed with that, 
+click on the <code>Database Access</code> option menu in the left column under <code>Security</code>. 
+
+Click "Add New Database User" , and select the password authentication method, create a username and password and then save.
+
+Go back to your database and then click the <code>Connect</code> button and choose connect to your application. Copy the URI and
+return to your project
+
+
 Inside the root of your project, add a file named .env and add the MONGO_URI variable and the connection string with your username and password.
 
 MONGO_URI="mongodb+srv://&lt;username>:&lt;password>@yourdatabase.mongodb.net/?retryWrites=true&w=majority"
@@ -66,3 +62,7 @@ Run npm init -y from the root of your repository to create a node project
 npm install concurrently –save
 
 This will allow you to run both the client and server at the same time using one command
+
+
+
+
