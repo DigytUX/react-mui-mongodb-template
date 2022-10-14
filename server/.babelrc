@@ -1,6 +1,6 @@
 {
     "presets":[
         "env",
-        "stage-0" // includes all change sto the language
+        "stage-0" // includes all latest changes to the javascript
     ]
 }

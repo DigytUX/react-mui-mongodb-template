@@ -5,7 +5,7 @@ import {
     Card,
     Button
 } from '@mui/material'
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from 'react-router-dom'
 
 export const GuestCard = ({data}) => {
     const navigate = useNavigate()
@@ -23,7 +23,7 @@ export const GuestCard = ({data}) => {
                     <Typography variant='h6'>
                         {data.lastName}
                     </Typography>
-                    <Button onClick={handleClick} variant="contained">View Profile</Button>
+                    <Button onClick={handleClick} variant='contained'>View Profile</Button>
                 </Box>
            </Card>
         </>

@@ -17,7 +17,7 @@ mongoose
         useNewUrlParser:true,
         useUnifiedTopology:true
     })
-    .then(()=> console.log('connected to mongodb'))
+    .then(()=> console.log('successfully connected to mongodb'))
     .catch(error => handleError(error))
 
 app.use(bodyparser.urlencoded({extended:true}))

@@ -7,7 +7,7 @@ import {
     Grid
 } from '@mui/material'
 import axios from 'axios'
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from 'react-router-dom'
 
 export const GuestInfo = ({
         _id,
@@ -33,24 +33,24 @@ export const GuestInfo = ({
 
     return (
         <Box>
-            <Typography variant="h4">
+            <Typography variant='h4'>
                 {firstname}
             </Typography>
-            <Typography variant="h5">
+            <Typography variant='h5'>
                 {lastname}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant='h6'>
                 {email}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant='h6'>
                 {phone}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant='h6'>
                 {address}
             </Typography>
-            <Button onClick={deleteGuest} variant="contained">Delete</Button>
-            <Button onClick={handleUpdate} variant="contained">Update</Button>
-            <Button href="/add-guest" variant="contained">Back</Button>
+            <Button onClick={deleteGuest} variant='contained'>Delete</Button>
+            <Button onClick={handleUpdate} variant='contained'>Update</Button>
+            <Button href='/add-guest' variant='contained'>Back</Button>
         </Box>
     )
 }
