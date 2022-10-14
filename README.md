@@ -14,7 +14,7 @@ Here is where you will be installing the client and server folder. Inside of the
 
 Inside of /server run then execute the following
 
-npm init -y
+`npm init -y`
 
 yarn add express cors body-parser mongoose
 
