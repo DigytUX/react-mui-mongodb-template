@@ -106,12 +106,7 @@ function App() {
             <Paper>
               <Box sx={styles.FlexBox}>
                 <Typography variant='h5'>No bloat backend</Typography>
-                {/* <Typography variant='body1'>
-                  The problem with services like Amplify and Firebase 
-                  is that you dont have much control on the backend. 
-                  Without decent documentation and root access you can run into issues
-                  that are quite time expensive.
-                </Typography> */}
+               
                 <Typography variant='body1'>
                   This backend is built using express, a Node.js framework that will get your CRUD app 
                   up as quickly as possible with clean code that is easy to digest scale on without crap that is not needed.
