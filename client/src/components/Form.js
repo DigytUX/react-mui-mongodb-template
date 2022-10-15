@@ -61,10 +61,10 @@ export const Form = () =>   {
         try {
             axios
                 .post('http://localhost:8080/guests', query)
-            window.location.reload(false)
         } catch(err) {
             console.log('we gots a prahlem:', err)
         }
+        window.location.reload()
     }
 
     return (
