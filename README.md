@@ -1,7 +1,7 @@
 ![Group 62](https://user-images.githubusercontent.com/44784345/209415730-618bc1bb-3e30-4a1c-9cf4-0a78c3caa482.png)
 
 # React + MUI + MONGODB
-Build react without the crap!
+Fullstack React and MongoDB with built in and configured backend right out of the box. Recommended deployment to a VPS server (using NGINX or Apache). Its recommended to separate the logic of the two layers on its own tier and using an API to connect.
 
 ## Prerequisites
 
